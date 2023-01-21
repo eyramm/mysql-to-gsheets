@@ -14,6 +14,8 @@ Python 3+
 
 `pip install gspread oauth2client PyOpenSSL` # Neccesary to connect with Google Sheets API
 
+or run `pip install -r requirements.txt`
+
 * [Getting Google API's credentials](http://gspread.readthedocs.io/en/latest/oauth2.html)
 
 
