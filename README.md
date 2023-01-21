@@ -1,7 +1,6 @@
 # MySQL dump to Google Sheets
 
 Tool to make a dump of your MySQL tables to your Google Sheet document.
-
 By default, it copies each table in a different worksheet.
 
 
@@ -11,7 +10,7 @@ Python 3+
 
 **Libraries:**
 
-`pip install mysql-connector` # MySQL Connector
+`pip install mysql-connector-python` # MySQL Connector
 
 `pip install gspread oauth2client PyOpenSSL` # Neccesary to connect with Google Sheets API
 
@@ -26,8 +25,6 @@ Python 3+
 2. Create a GSheet document in your Google Drive account. You have to create different worksheets with the names of the tables of the previous step. Remind to share this document with edit permissions with the *client_email* parameter of your Google API's credentials. Wait a couple of minutes to make effective the propagation.
 
 3. Run `python main.py` and magically, your worksheets are filled and with the name of columns too!
-
-
 
 
 ## Troubleshooting

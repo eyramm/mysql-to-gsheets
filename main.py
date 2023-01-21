@@ -9,7 +9,7 @@ from config import MYSQL_CONFIG
 scope = ['https://spreadsheets.google.com/feeds',
          'https://www.googleapis.com/auth/drive']
 
-credentials = ServiceAccountCredentials.from_json_keyfile_name('XXXXXXX.json', scope) # TODO: Put your json keyfile name
+credentials = ServiceAccountCredentials.from_json_keyfile_name('full_path_to.json', scope) # TODO: Put your json keyfile name
 gc = gspread.authorize(credentials)
 
 
@@ -19,7 +19,7 @@ gc = gspread.authorize(credentials)
 cnx = mysql.connector.connect(user = MYSQL_CONFIG['user'],
               password = MYSQL_CONFIG['pass'],
               host = MYSQL_CONFIG['host'],
-              database = MYSQL_CONFIG'db'])
+              database = MYSQL_CONFIG['db'])
 
 cursor = cnx.cursor(dictionary = True)
 
