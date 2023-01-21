@@ -1,0 +1,4 @@
+mysql-connector-python
+gspread 
+oauth2client 
+PyOpenSS
